@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onlineCarResale/store/hummer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="hummer">
+<meta name="author" content="Manzi Ngabonziza Aime Felix">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<link rel="favicon" type= "image" href="webLogo.png">
+</head>
+<body>
+  <div class="header">
+    <img src="webLogo.png" alt="myWebsiteLogo" class="img1">
+    <h1 class="h1">MANZI <sub><img src="tires1.jpeg" alt="tires" class="img4"></sub>nline Car Resale</h1>
+</div>
+    <ul class="ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="store.html">Available Cars</a></li>
+    <li><a href="nissan.html">Nissan</a></li>
+    <li><a href="toyota.html">Toyota</a></li>
+    <li><a href="bmw.html">BMW</a></li>
+    <li><a href="volks.html">VolsWagen</a></li>
+    <li><a href="hummer.html" class="active1">Hummer</a></li>
+    <li><a href="about.html" id="leftt">About us</a></li>
+    </ul>
+<div class="content">
+  <div class="vernav">
+  <h3>Choose car Here!!</h3>
+  <ol class="ol">
+    <li><a href="nissan.html">Nissan</a>
+    <li><a href="toyota.html">Toyota</a>
+     <li><a href="bmw.html">BMW</a>
+    <li><a href="hummer.html">Hummer</a>
+    <li><a href="volks.html">VolksWagen</a>
+  </ol>
+  <h3>Product Descrption</h3>
+  <table>
+    <tr>
+      <td>Model</td>
+      <td>2008 Hummer H3 Base</td>
+    </tr>
+    <tr>
+      <td>Km Travailled</td>
+      <td>238 500 Km</td>
+    </tr>
+    <tr class="td1">
+      <td>Price</td>
+      <td>5 500 000 Rwf</td>
+    </tr>
+  </table>
+     </div>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="hummer1.jpg" class="img">
+      </div>
+      <div class="mySlides fade">
+        <img src="hummer2.jpeg" class="img">
+      </div>
+      <div class="mySlides fade">
+        <img src="hummer3.jpg" class="img">
+      </div>
+      <div class="mySlides fade">
+        <img src="hummer4.jpeg" class="img">
+      </div>
+      <div class="mySlides fade">
+        <img src="hummer5.jpg" class="img">
+      </div>
+      <div class="mySlides fade">
+        <img src="hummer6.jpg" class="img">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>  
+      </div>      
+</div>
+      <div class="left">
+        <h3>Fill the form carefully</h3>
+        <form class="form_hummer">
+          <form action="mailto:aimemanzingabo11@gmail.com">
+          <label>Enter your first name:</label><br>
+          <input type="text",name="First_name",value="",required, autofocus><br>
+          <label>Enter your second name:</label><br>
+          <input type="text",name="Last_name",value=""><br>
+          <label>Choose your sex</label><br>
+          <input type="radio" name="sex"value="" style="width: auto;height: auto;color: red;">Male</input>
+          <input type="radio" name="sex"value="" style="width: auto;height: auto;color: red;">Female</input><br>
+          <label>Enter today's date:</label><br>
+          <input type="date",name="date", value=""><br>
+          <label>Enter your Email:</label><br>
+          <input type="email",name="youremail", value="", placeholder="abcd@gmail.com", required><br>
+          <label>Enter your ID Number:</label><br>
+          <input type="id",name="id", placeholder="ID Number", required><br>
+          <label>Enter your Telephone:</label><br>
+          <input type="tel",name="phone", placeholder="+250", required><br>
+          <label>Model:</label><label>     2008 Hummer H3 Base</label><br>
+          <label>Cost:</label><label>      5 500 000 Rwf</label><br>
+          <input type="submit" name="submit" value="Place an Order" onclick="alert('Your order has been place, please check the status down!!')">
+          </form>
+          <a href="buyHummer.html"><button style="height: 25px; width: 50%; background-color: rgb(0, 255, 13);color: white;">Check Status</button></a>
+</div>
+</div>
+    </div>
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+      
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        
+        slides[slideIndex-1].style.display = "block";  
+      
+      }
+      </script>
+</div>
+  
+  <div class="footer">
+    <P class="p4">&COPY;Manzi, 2023: All Right Reserved</P>
+<P class="p4">
+    For more information visit me on:
+</P>
+<p class="p6">
+    <a href="www.facebook.com" target="_parent"><img src="fb.jpeg" alt="Facebook" class="img3"></a>
+    <a href="www.youtube.com" target="_parent"><img src="ytb.png" alt="Youtube" class="img3"></a>
+    <a href="www.instagram.com" target="_parent"><img src="ins.jpeg" alt="Instagram" class="img3"></a>
+    <a href="www.linkedin.com" target="_parent"><img src="linked.png" alt="Linkedin" class="img3"></a>
+</p>
+  </div>
+</body>
+</html>
